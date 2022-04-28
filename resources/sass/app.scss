@@ -1,1 +1,54 @@
 //
+@import 'partials/variables';
+@import 'partials/reset';
+
+body{
+    background-color: aqua;
+}
+
+.active {
+    background-color: yellow;
+    border-bottom: solid 2px blue;
+}
+
+
+// ___header___________________
+
+header{
+    background-color: #fff;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+
+  }
+  img {
+    display: block;
+    height: 4rem;
+    width: 4rem;
+    margin: 1rem 0;
+  }
+  ul{
+    height: 100%;
+      li{
+        display: inline-block;
+        text-transform: uppercase;
+        height: 100%;
+        a{
+          text-decoration: none;
+          color: $navbar-color;
+          margin-left: 1rem;
+          font-weight: 700;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          border-bottom: 0.4rem transparent solid;
+          &:hover {
+                border-bottom: 0.4rem $blue-dc-color solid;
+                color: $blue-dc-color;
+              }
+        }
+      }
+  }
+}

@@ -14,13 +14,9 @@
     <h1>prova</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi neque similique eveniet laborum omnis doloremque esse asperiores qui repudiandae fugiat illum, fugit ullam alias earum facere recusandae cum eos voluptatum.</p>
 
-    {{-- @dd($dc) --}}
-    {{-- @foreach ($dc as $item)
-        {{$dc['series']}}
-    @endforeach --}}
     @foreach (config('comics') as $item)
         <div class="item">
-            <img src="{{ $item['thumb'] }}" alt="">
+            <img src="{{ $item['thumb'] }}" alt="{{ $item['series'] }}">
             <span>{{ $item['series'] }}</span>
         </div>
     @endforeach
