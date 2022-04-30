@@ -49,7 +49,7 @@ header{
   }
 }
 
-// ___jumbo___________________
+// ___main___________________
 main{
     color: #fff;
     text-transform: uppercase;
@@ -105,4 +105,26 @@ main{
         cursor: pointer;
       }
     }
+
+    // ___bluebar___________________
+
+    .icons{
+        margin-top: 2rem;
+        padding: 2rem;
+        background-color: $blue-dc-color;
+        color: white;
+        text-transform: uppercase;
+        .container{
+          align-items: center;
+          img{
+            height: 60px;
+            width: auto;
+            margin-left: 2rem;
+          }
+          span{
+            padding-left: 1rem;
+          }
+        }
+      }
+
   }

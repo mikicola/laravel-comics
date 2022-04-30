@@ -17,7 +17,7 @@
       <h2>current series</h2>
         <div class="container flex">
 
-            @foreach (config('comics') as $item)
+            @foreach (config('myconfig.comics') as $item)
                 <div class="item">
                     <div class="img-item-content">
                         <img src="{{ $item['thumb'] }}" alt="{{ $item['series'] }}">
@@ -30,6 +30,17 @@
         </div>
         <span class="span-load">load more</span>
     </section>
+
+    <div class="icons flex">
+        <div class="container flex">
+            @foreach (config('myconfig.bluebar') as $item)
+                <img src="./images/{{ $item['img'] }}":alt="{{ $item['text'] }}">
+                <span>{{ $item['text'] }}</span>
+            @endforeach
+        </div>
+    </div>
+
+
   </main>
 
 @endsection

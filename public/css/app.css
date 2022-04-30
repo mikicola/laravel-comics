@@ -116,3 +116,21 @@ main #comics .span-load {
   text-align: center;
   cursor: pointer;
 }
+main .icons {
+  margin-top: 2rem;
+  padding: 2rem;
+  background-color: rgb(12, 124, 236);
+  color: white;
+  text-transform: uppercase;
+}
+main .icons .container {
+  align-items: center;
+}
+main .icons .container img {
+  height: 60px;
+  width: auto;
+  margin-left: 2rem;
+}
+main .icons .container span {
+  padding-left: 1rem;
+}
