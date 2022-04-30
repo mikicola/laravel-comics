@@ -85,7 +85,7 @@ main #comics .container {
   flex-wrap: wrap;
 }
 main #comics .container .item {
-  padding: 0.5rem;
+  padding: 1rem 0.5rem;
   width: 16.6666666667%;
 }
 main #comics .container .item .img-item-content {
@@ -107,12 +107,14 @@ main #comics .container .item .img-item-content img {
 }
 main #comics .container .item span {
   text-align: left;
+  font-size: 0.9rem;
 }
 main #comics .span-load {
   background: rgb(12, 124, 236);
-  padding: 0.7rem 0.5rem;
+  font-weight: bold;
+  padding: 0.7rem 3rem;
   display: table;
-  margin: 0 auto;
+  margin: 1.5rem auto;
   text-align: center;
   cursor: pointer;
 }
@@ -133,4 +135,88 @@ main .icons .container img {
 }
 main .icons .container span {
   padding-left: 1rem;
+}
+
+footer .main-footer {
+  position: relative;
+  color: gray;
+}
+footer .main-footer img {
+  background-repeat: no-repeat;
+  background-size: auto;
+  width: 100%;
+}
+footer .main-footer .container {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+footer .main-footer .container .left {
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+footer .main-footer .container .left .column {
+  width: 25%;
+  align-self: flex-start;
+}
+footer .main-footer .container .left ul {
+  list-style-type: none;
+}
+footer .main-footer .container .left ul h3 {
+  color: white;
+  text-transform: uppercase;
+  padding-bottom: 0.5rem;
+}
+footer .main-footer .container .left ul li {
+  font-size: 0.9em;
+  padding: 0.2rem 0;
+}
+footer .main-footer .container .left ul li a {
+  color: gray;
+  text-decoration: none;
+}
+footer .main-footer .container .left h3, footer .main-footer .container .left p {
+  padding-top: 1rem;
+}
+footer .main-footer .container .left p {
+  font-size: 0.9em;
+}
+footer .main-footer .container .right {
+  width: 50%;
+}
+footer .lower-footer {
+  background-color: #303030;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+footer .lower-footer .container {
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+footer .lower-footer .container .span-sign-up a {
+  border: 4px solid rgb(12, 124, 236);
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: #fff;
+}
+footer .lower-footer .container .follow {
+  align-items: center;
+}
+footer .lower-footer .container .follow .span-follow {
+  color: rgb(12, 124, 236);
+  font-weight: bold;
+  padding-right: 0.5rem;
+}
+footer .lower-footer .container .follow ul {
+  display: inline;
+}
+footer .lower-footer .container .follow ul li {
+  display: inline;
+  padding-left: 0.5rem;
+}
+footer .lower-footer .container .follow ul li a {
+  text-decoration: none;
 }
