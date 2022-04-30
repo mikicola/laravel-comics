@@ -21,10 +21,6 @@ body {
   display: flex;
 }
 
-body {
-  background-color: aqua;
-}
-
 .active {
   background-color: yellow;
   border-bottom: solid 2px blue;
@@ -65,4 +61,58 @@ header ul li a {
 header ul li a:hover {
   border-bottom: 0.4rem rgb(12, 124, 236) solid;
   color: rgb(12, 124, 236);
+}
+
+main {
+  color: #fff;
+  text-transform: uppercase;
+}
+main #jumbotron {
+  height: 300px;
+  overflow: hidden;
+}
+main #jumbotron img {
+  background-repeat: no-repeat;
+  background-size: auto;
+  width: 100%;
+}
+main #comics h2 {
+  background: rgb(12, 124, 236);
+  padding: 0.7rem 0.5rem;
+  display: inline-block;
+}
+main #comics .container {
+  flex-wrap: wrap;
+}
+main #comics .container .item {
+  padding: 0.5rem;
+  width: 16.6666666667%;
+}
+main #comics .container .item .img-item-content {
+  max-width: 100%;
+  position: relative;
+  background-color: aqua;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+main #comics .container .item .img-item-content::after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+main #comics .container .item .img-item-content img {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+}
+main #comics .container .item span {
+  text-align: left;
+}
+main #comics .span-load {
+  background: rgb(12, 124, 236);
+  padding: 0.7rem 0.5rem;
+  display: table;
+  margin: 0 auto;
+  text-align: center;
+  cursor: pointer;
 }

@@ -2,10 +2,6 @@
 @import 'partials/variables';
 @import 'partials/reset';
 
-body{
-    background-color: aqua;
-}
-
 .active {
     background-color: yellow;
     border-bottom: solid 2px blue;
@@ -52,3 +48,61 @@ header{
       }
   }
 }
+
+// ___jumbo___________________
+main{
+    color: #fff;
+    text-transform: uppercase;
+    #jumbotron {
+      height: 300px;
+      overflow: hidden;
+      img {
+        background-repeat: no-repeat;
+        background-size: auto;
+        width: 100%;
+      }
+    }
+    #comics{
+      // background-color: $dark-bg-color;
+        h2{
+          background: $blue-dc-color;
+          padding: .7rem .5rem;
+          display: inline-block;
+        }
+      .container{
+        flex-wrap: wrap;
+        .item{
+            padding:.5rem;
+            width: calc(100% / 6);
+            .img-item-content{
+                max-width: 100%;
+                position: relative;
+                background-color: aqua;
+                margin-bottom:1rem;
+                overflow: hidden;
+                &::after{
+                    content: '';
+                    display: block;
+                    padding-bottom: 100%;
+                }
+                img{
+                    position: absolute;
+                    width: 100%;
+                    overflow: hidden;
+                }
+            }
+            span{
+                text-align: left;
+            }
+        }
+      }
+      .span-load{
+        background: $blue-dc-color;
+        padding: .7rem .5rem;
+        display: table;
+        margin: 0 auto;
+        text-align: center;
+        cursor: pointer;
+      }
+    }
+  }

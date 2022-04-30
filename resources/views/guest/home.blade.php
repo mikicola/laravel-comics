@@ -7,18 +7,29 @@
 @section('title', 'DC - Home')
 
 
-{{--
-1   = cosa sotituisco
-2   = cosa inserisco (h1 e p) --}}
-@section('content')
-    <h1>prova</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi neque similique eveniet laborum omnis doloremque esse asperiores qui repudiandae fugiat illum, fugit ullam alias earum facere recusandae cum eos voluptatum.</p>
 
-    @foreach (config('comics') as $item)
-        <div class="item">
-            <img src="{{ $item['thumb'] }}" alt="{{ $item['series'] }}">
-            <span>{{ $item['series'] }}</span>
+@section('content')
+<main>
+    <section id="jumbotron">
+      <img src="./images/jumbotron.jpg" alt="DC Comics banner personaggi">
+    </section>
+    <section id="comics">
+      <h2>current series</h2>
+        <div class="container flex">
+
+            @foreach (config('comics') as $item)
+                <div class="item">
+                    <div class="img-item-content">
+                        <img src="{{ $item['thumb'] }}" alt="{{ $item['series'] }}">
+                    </div>
+                    <span>{{ $item['series'] }}</span>
+                </div>
+            @endforeach
+            <!-- THUMB è link immagine -->
+
         </div>
-    @endforeach
+        <span class="span-load">load more</span>
+    </section>
+  </main>
 
 @endsection
